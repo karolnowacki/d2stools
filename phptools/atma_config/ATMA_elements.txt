@@ -1,0 +1,6 @@
+Code	Id	Name
+cold	0	Cold
+fire	1	Fire
+ltng	2	Lightning
+pois	3	Poison
+mag	4	Magic

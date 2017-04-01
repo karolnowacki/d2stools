@@ -1,0 +1,273 @@
+Code	Description	Id	version	Class	stackedOn	numFields	bits1	bits2	bits3	bits4	bias	type1	desc1	units1	type2	desc2	units2	type3	desc3	units3	type4	desc4	units4	fmtString1	fmtString2	displayFunc	paramFunc	convertFieldFunc1	verifyFieldFunc1	convertFieldFunc2	verifyFieldFunc2	convertFieldFunc3	verifyFieldFunc3	convertFieldFunc4	verifyFieldFunc4	addFunc	partial	partialField	group	composite	comp1	comp2	comp3	comp4	comp5	comp6	comp7
+str	Strength	0	1			1	8				32	i	+											"%+d to Strength"	"From %d - %d Strength"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+enr	Energy	1	1			1	7				32	i	+											"%+d to Energy"	"From %d - %d Energy"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+dex	Dexterity	2	1			1	7				32	i	+											"%+d to Dexterity"	"From %d - %d Dexterity"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+vit	Vitality	3	1			1	7				32	i	+											"%+d to Vitality"	"From %d - %d Vitality"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+hp	Life	7	1			1	9				32	i	+											"%+d to Life"	"From %d - %d Life"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+mana	Mana	9	1			1	8				32	i	+											"%+d to Mana"	"From %d - %d Mana"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+stam	Stamina	11	1			1	8				32	i	+											"%+d to Maximum Stamina"	"From %d - %d Maximum Stamina"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+ac%	"% Defense"	16	1			1	9					i	Enhanced	%										"%+d%% Enhanced Defense"	"From %d%% - %d%% Enhanced Defense"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+dmg%	"% Damage"	17	1			2	9	9				i	Enhanced	%	i	ditto	%							"%+d%% Enhanced Damage"	"From %d%% - %d%% Enhanced Damage"	ENHANCED_DAMAGE	MIN_MAX	INTEGER	NON_ZERO	INTEGER	NON_ZERO					2FIELDS
+
+	"Enhanced Minimum Damage"	18	1			1	9					i	Enhanced	%	i	ditto	%							"%+d%% Enhanced Minimum Damage"	"From %d%% - %d%% Enhanced Minimum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO	INTEGER	NON_ZERO					1FIELD
+
+att	"Attack Rating"	19	1			1	10					i	+											"%+d to Attack Rating"	"From %d - %d Attack Rating"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+block	"% Chance of Blocking"	20	1			1	6					i	Increased	%										"%+d%% Increased Chance of Blocking"	"From %d%% - %d%% Increased Chance of Blocking"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+dmg-min	"Minimum Damage"		1			1	6					i												"%+d to Minimum Damage"	"From %d - %d Minimum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD				3	21	23	159
+dmg-max	"Maximum Damage"		1			1	7					i												"%+d to Maximum Damage"	"From %d - %d Maximum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD				3	22	24	160
+	"Minimum Damage (One-Hand)"	21	1			1	6					i												"%+d to Minimum Damage"	"From %d - %d Minimum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			dmg-min
+	"Maximum Damage (One-Hand)"	22	1			1	7					i												"%+d to Maximum Damage"	"From %d - %d Maximum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			dmg-max
+	"Minimum Damage (Two-Hand)"	23	1			1	6					i												"%+d to Minimum Damage"	"From %d - %d Minimum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			dmg-min
+	"Maximum Damage (Two-Hand)"	24	1			1	7					i												"%+d to Maximum Damage"	"From %d - %d Maximum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			dmg-max
+regen-mana	"Regenerate Mana"	27	1			1	8					i		%										"Regenerate Mana %d%%"	"Regenerate Mana %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+regen-stam	"Heal Stamina"	28	1			1	8					i	Plus	%										"Heal Stamina Plus %d%%"	"Heal Stamina Plus %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+ac	Defense	31	1			1	11				10	i	+											"%+d Defense"	"From %d - %d Defense"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+ac-miss	"Defense vs. Missile"	32	1			1	9					i	+											"%+d Defense vs. Missile"	"From %d - %d Defense vs. Missile"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+ac-hth	"Defense vs. Melee"	33	1			1	8					i	+											"%+d Defense vs. Melee"	"From %d - %d Defense vs. Melee"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+red-dmg	"Damage Reduced by"	34	1			1	6					i												"Damage Reduced by %d"	"Damage Reduced by %d - %d"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+red-mag	"Magic Damage Reduced by"	35	1			1	6					i												"Magic Damage Reduced by %d"	"Magic Damage Reduced by %d - %d"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+red-dmg%	"% Damage Reduced by"	36	1			1	8					i												"Damage Reduced by %d%%"	"Damage Reduced by %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+res-mag	"% Magic Resist"	37	1			1	8					i		%										"Magic Resist %+d%%"	"Magic Resist %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+res-mag-max	"Maximum Magic Resist"	38	1			1	5					i		%										"%+d%% to Maximum Magic Resist"	"From %d%% - %d%% to Maximum Magic Resist"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all
+res-all	"% Resist All"		1			1	8				50	i												"All Resistances %+d"	"All Resistances %d - %d"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD				4	39	41	43	45
+res-all-max	"Maximum Resist All"		1			1	5					i												"%+d to Maximum All Resistances"	"From %d - %d to Maximum All Resistances"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD				4	40	42	44	46
+res-fire	"% Fire Resist"	39	1			1	8				50	i		%										"Fire Resist %+d%%"	"Fire Resist %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all
+res-fire-max	"Maximum Fire Resist"	40	1			1	5					i		%										"%+d%% to Maximum Fire Resist"	"From %d%% - %d%% to Maximum Fire Resist"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all-max
+res-ltng	"% Lightning Resist"	41	1			1	8				50	i		%										"Lightning Resist %+d%%"	"Lightning Resist %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all
+res-ltng-max	"Maximum Lightning Resist"	42	1			1	5					i		%										"%+d%% to Maximum Lightning Resist"	"From %d%% - %d%% to Maximum Lightning Resist"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all-max
+res-cold	"% Cold Resist"	43	1			1	8				50	i		%										"Cold Resist %+d%%"	"Cold Resist %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all
+res-cold-max	"Maximum Cold Resist"	44	1			1	5					i		%										"%+d%% to Maximum Cold Resist"	"From %d%% - %d%% to Maximum Cold Resist"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all-max
+res-pois	"% Poison Resist"	45	1			1	8				50	i		%										"Poison Resist %+d%%"	"Poison Resist %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all
+res-pois-max	"Maximum Poison Resist"	46	1			1	5					i		%										"%+d%% to Maximum Poison Resist"	"From %d%% - %d%% to Maximum Poison Resist"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			res-all-max
+fire-min	"Minimum fire damage"		1			1	8					i												"%d minimum fire damage"	"From %d - %d minimum fire damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-fire	1
+fire-max	"Maximum Fire Damage"	49	1			1	9					i												"%+d to Maximum Fire Damage"	"From %d - %d to Maximum Fire Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-fire	2
+dmg-fire	"Fire Damage"	48	1			2	8	9				i	"Minimum Damage"		i	"Maximum Damage"								"%+d fire damage"	"Adds %d-%d fire damage"	ADD_RANGE	MIN_MAX	INTEGER	TRUE	INTEGER	NON_ZERO					2FIELDS
+ltng-min	"Minimum lightning damage"		1			1	6					i												"%d minimum lightning damage"	"From %d - %d minimum lightning damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-ltng	1
+ltng-max	"Maximum lightning damage"		1			1	10					i												"%d maximum lightning damage"	"From %d - %d maximum lightning damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-ltng	2
+dmg-ltng	"Lightning Damage"	50	1			2	6	10				i	"Minimum Damage"		i	"Maximum Damage"								"%+d lightning damage"	"Adds %d-%d lightning damage"	ADD_RANGE	MIN_MAX	INTEGER	TRUE	INTEGER	NON_ZERO					2FIELDS
+mag-min	"Minimum magic damage"		1			1	8					i												"%d minimum magic damage"	"From %d - %d minimum magic damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-mag	1
+mag-max	"Maximum magic damage"	53	1			1	9					i												"%d maximum magic damage"	"From %d - %d maximum magic damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-mag	2
+dmg-mag	"Magic Damage"	52	1			2	8	9				i	"Minimum Damage"		i	"Maximum Damage"								"%+d magic damage"	"Adds %d-%d magic damage"	ADD_RANGE	MIN_MAX	INTEGER	TRUE	INTEGER	NON_ZERO					2FIELDS
+cold-min	"Minimum cold damage"		1			1	8					i												"%d minimum cold damage"	"From %d - %d minimum cold damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-cold	1
+cold-max	"Maximum cold damage"		1			1	9					i												"%d maximum cold damage"	"From %d - %d maximum cold damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-cold	2
+cold-len	"Cold duration"		1			1	8					d		seconds										"%d seconds cold duration"	"From %d - %d seconds cold duration"	DURATION	MIN_MAX	DURATION	NON_ZERO							NOOP	dmg-cold	3
+dmg-cold	"Cold Damage"	54	1			3	8	9	8			i	"Minimum Damage"		i	"Maximum Damage"		d	Duration	seconds				"%+d cold damage over %d seconds"	"Adds %d-%d cold damage over %d seconds"	COLD_DAMAGE	MIN_MAX_DUR	INTEGER	TRUE	INTEGER	NON_ZERO	DURATION	NON_ZERO			2FIELDS
+	"Cold duration"	56	1			1	8					d		seconds										"%d seconds cold duration"	"From %d - %d seconds cold duration"	IGNORE	MIN_MAX	DURATION	NON_ZERO							1FIELD	dmg-cold	3
+pois-min	"Minimum poison damage"		1			1	10					d		"per second"										"%d minimum poison damage"	"From %d - %d minimum poison damage"	POISON_SINGLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-pois	1
+pois-max	"Maximum poison damage"	58	1			1	10					d		"per second"										"%d maximum poison damage per second"	"From %d - %d maximum poison damage"	POISON_SINGLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD	dmg-pois	2
+pois-len	"Poison duration"	59	1			1	9					d		seconds										"%d seconds poison duration"	"From %d - %d seconds poison duration"	DURATION	MIN_MAX	DURATION	NON_ZERO							NOOP	dmg-pois	3
+dmg-pois	"Poison Damage"	57	1			3	10	10	9			d	"Minimum Damage"	"per second"	d	"Maximum Damage"	"per second"	d	Duration	seconds				"%+d poison damage over %d seconds"	"Adds %d-%d poison damage over %d seconds"	POISON_DAMAGE	MIN_MAX_DUR	POISON_DAMAGE	TRUE	POISON_DAMAGE	NON_ZERO	DURATION	NON_ZERO			2FIELDS
+lifesteal	"% Life steal"	60	1			1	7					i		%										"%d%% Life stolen per hit"	"From %d%% - %d%% Life stolen per hit"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+manasteal	"% Mana steal"	62	1			1	7					i		%										"%d%% Mana stolen per hit"	"From %d%% - %d%% Mana stolen per hit"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+	"Faster Run/Walk"	67	1			1	7				30	i		%										"%d%% Faster Run/Walk"	"From %d%% - %d%% Faster Run/Walk"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+	"Increased Attack Speed"	68	1			1	7				30	i		%										"%d%% Increased Attack Speed"	"From %d%% - %d%% Increased Attack Speed"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+regen-mana	"Replenish Mana"		1			1	16					i		%										"Replenish Mana %d%%"	"Replenish Mana %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+dur	Durability	73	1			1	8					i	+											"%+d Maximum Durability"	"From %d - %d Maximum Durability"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+regen	"Replenish Life"	74	1			1	6				30	i	+											"Replenish Life %+d"	"Drain Life %+d"	CHECK_SIGN	MIN_MAX	INTEGER	TRUE							1FIELD
+dur%	"% Durability"	75	1			1	7				20	i	Increase	%										"Increase Maximum Durability %d%%"	"Increase Maximum Durability %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+hp%	"% Maximum Life"	76	1			1	6				10	i	Increase	%										"Increase Maximum Life %d%%"	"Increase Maximum Life %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+mana%	"% Maximum Mana"	77	1			1	6				10	i	Increase	%										"Increase Maximum Mana %d%%"	"Increase Maximum Mana %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+thorns	"Attacker Takes Damage"	78	1			1	7					i												"Attacker Takes Damage of %d"	"Attacker Takes Damage of %d - %d"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+gold%	"% More Gold"	79	1			1	9				100	i		%										"%d%% Extra Gold from Monsters"	"From %d%% - %d%% Extra Gold from Monsters"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+mag%	"% Magic Find"	80	1			1	8				100	i		%										"%d%% Better Chance of Getting Magic Items"	"From %d%% - %d%% Better Chance of Getting Magic Items"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+knock	Knockback	81	1			1	7					b												Knockback		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+time	"Time duration"	82	1			1	9				20	d		seconds										"%d seconds duration"	"From %d - %d seconds duration"	DURATION	MIN_MAX	DURATION	NON_ZERO							NOOP		3
+
+	"Class Skills"	83	1			2	3	3				c	"Class"		i	Level								"%+d to %s Skill Levels"		CLASS_UP	CLASS_LEVEL	CLASS	CLASS	INTEGER	NON_ZERO					2NDFIELD
+
+ama	"Amazon Skills"		1	ama	83	1	3					i	+											"%+d to Amazon Skill Levels"	"From %d - %d to Amazon Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			allskills
+pal	"Paladin Skills"		1	pal	83	1	3					i	+											"%+d to Paladin Skill Levels"	"From %d - %d to Paladin Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			allskills
+nec	"Necromancer Skills"		1	nec	83	1	3					i	+											"%+d to Necromancer Skill Levels"	"From %d - %d to Necromancer Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			allskills
+sor	"Sorceress Skills"		1	sor	83	1	3					i	+											"%+d to Sorceress Skill Levels"	"From %d - %d to Sorceress Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			allskills
+bar	"Barbarian Skills"		1	bar	83	1	3					i	+											"%+d to Barbarian Skill Levels"	"From %d - %d to Barbarian Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			allskills
+addxp	"Experience Gain"	85	100			1	9				50	i	+											"%+d%% to Experience Gained"	"From %d - %d to Experience Gained"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+heal-kill	"Life per Kill"	86	100			1	7					i	+											"%+d Life after each Kill"	"From %d - %d Life after each Kill"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+cheap	"Reduced Prices"	87	100			1	7					i	+											"Reduces All Vendor Prices %d%%"	"Reduces All Vendor Prices %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+light	"Light Radius"	89	1			1	4				4	i												"%+d to Light Radius"	"From %d - %d to Light Radius"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+ease	"Requirements -%"	91	1			1	8				100	i		%										"Requirements %+d%%"	"Requirements %+d%% - %+d%%"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+levelreq	"Required Level -"	92	1			1	7					i		%										"Required Level %+d"	"Required Level %+d - %+d"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+swing1	"Increased Attack Speed"		1		93	1	7				20	i		%										"%d%% Increased Attack Speed"	"From %d%% - %d%% Increased Attack Speed"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	swing2	1
+swing2	"Increased Attack Speed"	93	1			1	7				20	i		%										"%d%% Increased Attack Speed"	"From %d%% - %d%% Increased Attack Speed"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+swing3	"Increased Attack Speed"		1		93	1	7				20	i		%										"%d%% Increased Attack Speed"	"From %d%% - %d%% Increased Attack Speed"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	swing2	1
+	"Required Level -%"	94	1			1	7				64	i		%										"Required Level %d%%"	"Required Level %+d%% - %+d%%"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+move1	"Faster Run/Walk"		1		96	1	7				20	i		%										"%d%% Faster Run/Walk"	"From %d%% - %d%% Faster Run/Walk"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	move2	1
+move2	"Faster Run/Walk"	96	1			1	7				20	i		%										"%d%% Faster Run/Walk"	"From %d%% - %d%% Faster Run/Walk"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+move3	"Faster Run/Walk"		1		96	1	7				20	i		%										"%d%% Faster Run/Walk"	"From %d%% - %d%% Faster Run/Walk"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	move2	1
+
+oskill	"Add Non-Class Skill Points"	97	1		107	2	9	6			100	s	Skill		i	Level								"%+d to %s"		OSKILL_UP	SKILL_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO					2NDFIELD
+state	"State"	98	1			1	8				100	i												"State"		IGNORE	MIN_MAX	INTEGER	NON_ZERO							NOOP
+
+balance1	"Faster Hit Recovery"		1		99	1	7				20	i		%										"%d%% Faster Hit Recovery"	"From %d%% - %d%% Faster Hit Recovery"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	balance2	1
+balance2	"Faster Hit Recovery"	99	1			1	7				20	i		%										"%d%% Faster Hit Recovery"	"From %d%% - %d%% Faster Hit Recovery"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+balance3	"Faster Hit Recovery"		1		99	1	7				20	i		%										"%d%% Faster Hit Recovery"	"From %d%% - %d%% Faster Hit Recovery"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	balance2	1
+block1	"Faster Block Rate"		1		102	1	7				20	i		%										"%d%% Faster Block Rate"	"From %d%% - %d%% Faster Block Rate"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	block2	1
+block2	"Faster Block Rate"	102	1			1	7				20	i		%										"%d%% Faster Block Rate"	"From %d%% - %d%% Faster Block Rate"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+block3	"Faster Block Rate"		1		102	1	7				20	i		%										"%d%% Faster Block Rate"	"From %d%% - %d%% Faster Block Rate"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	block2	1
+cast1	"Faster Cast Rate"		1		105	1	7				20	i		%										"%d%% Faster Cast Rate"	"From %d%% - %d%% Faster Cast Rate"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	cast2	1
+cast2	"Faster Cast Rate"	105	1			1	7				20	i		%										"%d%% Faster Cast Rate"	"From %d%% - %d%% Faster Cast Rate"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+cast3	"Faster Cast Rate"		1		105	1	7				20	i		%										"%d%% Faster Cast Rate"	"From %d%% - %d%% Faster Cast Rate"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD	cast2	1
+skill	"Add Skill Points"	107	1		107	2	9	3				s	Skill		i	Level								"%+d to %s (%s Only)"		SKILL_UP	SKILL_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO					2NDFIELD
+rip	"Rest In Peace"	108	1			1	1					b												"Slain Monsters Rest In Peace"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+res-pois-len	"Poison Length Reduced by %"	110	1			1	8				20	i		%										"Poison Length Reduced by %d%%"	"Poison Length Reduced by %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+dmg	"Damage"	111	1			1	9				20	i	+											"Adds %+d Damage"	"From %d - %d Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+howl	"Hit Causes Monster to Flee"	112	1			1	7				-1	i	Chance	%										"Hit Causes Monster to Flee %d%%"	"Hit Causes Monster to Flee %d%% - %d%%"	FLEE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+stupidity	"Hit Blinds Target"	113	1			1	7					i												"Hit Blinds Target %+d"	"Hit Blinds Target %d - %d"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+dmg-to-mana	"% Damage Goes to Mana"	114	1			1	6					i		%										"%d%% Damage Taken Goes to Mana"	"From %d%% - %d%% Damage Taken Goes to Mana"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+ignore-ac	"Ignore Target Defense"	115	1			1	1					b												"Ignore Target Defense"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+reduce-ac	"Reduce Target Defense"	116	1			1	7					i	to	%										"-%d%% Target Defense"	"%d%%-%d%% Target Defense"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+noheal	"Prevent Monster Heal"	117	1			1	7					b												"Prevent Monster Heal"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+half-freeze	"Half Freeze Duration"	118	1			1	1					b												"Half Freeze Duration"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+att%	"% Attack Rating"	119	1			1	9				20	i		%										"%d%% Bonus to Attack Rating"	"From %d%% - %d%% Bonus to Attack Rating"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+dmg-ac	"Reduce Monster Defense Per Hit"	120	1			1	7				128	i												"%+d to Monster Defense Per Hit"	"From %d - %d to Monster Defense Per Hit"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+dmg-demon	"% Damage to Demons"	121	1			1	9				20	i		%										"%d%% Damage to Demons"	"From %d%% - %d%% Damage to Demons"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+dmg-undead	"% Damage to Undead"	122	1			1	9				20	i		%										"%d%% Damage to Undead"	"From %d%% - %d%% Damage to Undead"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+att-demon	"Attack Rating against Demons"	123	1			1	10				128	i												"%+d to Attack Rating against Demons"	"From %d - %d to Attack Rating against Demons"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+att-undead	"Attack Rating against Undead"	124	1			1	10				128	i												"%+d to Attack Rating against Undead"	"From %d - %d to Attack Rating against Undead"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+throw	"Throwable"	125	1			1	1					b												"Throwable"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+
+
+fireskill	"Elemental Skills"	126	1			2	3	3				i	+											"%+d to %s Skills"	"From %d - %d to %s Skills"	ELEMENT_UP	ELEMENT_LEVEL	ELEMENT	ELEMENT	INTEGER	NON_ZERO					1FIELD
+
+allskills	"All Skills"	127	100			1	3					i	+											"%+d to All Skill Levels"	"From %d - %d to All Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD				7	83	84	85	86	87	179	180
+light-thorns	"Attacker Takes Lightning Damage"	128	1			1	5					i	"Lightning Damage"											"Attacker Takes Lightning Damage of %d"	"Attacker Takes Lightning Damage of %d - %d"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+freeze	"Freezes Target"	134	1			1	5					b												"Freezes Target %+d"	"Freezes Target %+d"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							NOOP
+openwounds	"Open Wounds"	135	1			1	7					i	Chance											"%d%% Chance of Open Wounds"	"From %d%% - %d%% Chance of Open Wounds"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+crush	"Crushing Blow"	136	1			1	7					i	Chance											"%d%% Chance of Crushing Blow"	"From %d%% - %d%% Chance of Crushing Blow"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+kick	"Kick Damage"	137	1			1	7					i	+											"%+d Kick Damage"	"From %d - %d Kick Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+mana-kill	"Mana Per Kill"	138	1			1	7					i	+											"%+d to Mana After Each Kill"	"From %d - %d to Mana After Each Kill"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+demon-heal	"Life per Demon Kill"	139	1			1	7					i	+											"%+d Life after each Demon Kill"	"From %d - %d Life after each Demon Kill"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+bloody	"Extra Bloody"	140	1			1	7					i		?										"%d%% Extra Bloody"		IGNORE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+deadly	"Deadly Strike"	141	1			1	7					i												"%d%% Deadly Strike"	"From %d%% - %d%% Deadly Strike"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-fire%	"% Fire Absorb"	142	1			1	7					i												"%d%% Fire Absorb"	"From %d%% - %d%% Fire Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-fire	"Fire Absorb"	143	1			1	7					i												"%+d Fire Absorb"	"From %d - %d Fire Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-ltng%	"% Lightning Absorb"	144	1			1	7					i												"%d%% Lightning Absorb"	"From %d%% - %d%% Lightning Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-ltng	"Lightning Absorb"	145	1			1	7					i												"%+d Lightning Absorb"	"From %d - %d Lightning Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-mag%	"% Magic Absorb"	146	1			1	7					i												"%d%% Magic Absorb"	"From %d%% - %d%% Magic Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-mag	"Magic Absorb"	147	1			1	7					i												"%+d Magic Absorb"	"From %d - %d Magic Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-cold%	"% Cold Absorb"	148	1			1	7					i												"%d%% Cold Absorb"	"From %d%% - %d%% Cold Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+abs-cold	"Cold Absorb"	149	1			1	7					i												"%+d Cold Absorb"	"From %d - %d Cold Absorb"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+slow	"Slows Target by %"	150	1			1	7					i		%										"Slows Target by %d%%"	"Slows Target by %d%% - %d%%"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+
+aura	"Aura on equip"	151	100			2	9	5				s	Skill		i	Level								"Level %d %s Aura When Equipped"		OSKILL_UP	SKILL_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO					
+
+indestruct	Indestructible	152	100			1	1					b												Indestructible		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+nofreeze	"Cannot Be Frozen"	153	1			1	1					b												"Cannot Be Frozen"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+stamdrain	"Slower Stamina Drain"	154	1			1	7				20	i												"%d%% Slower Stamina Drain"	"From %d%% - %d%% Slower Stamina Drain"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+reanimate	"Reanimate target"	155	1			2	10	7				s	"Monster type"		i	"Chance to cast"	%							"%d%% Reanimate As: %s"	"From %d%% - %d%% Reanimate As: %s"	REANIMATE	REANIMATE_CHANCE_LEVEL	MONSTER	MONSTER	INTEGER	NON_ZERO					1FIELD
+pierce	"Piercing Attack"	156	1			1	7					i		?										"Piercing Attack [%d]"		SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+magicarrow	"Fires Magic Arrows"	157	1			1	7					b												"Fires Magic Arrows"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+explosivearrow	"Fires Explosive Arrows"	158	1			1	7					b												"Fires Explosive Arrows"		BOOLEAN	MIN_MAX		BOOLEAN							NOOP
+	"Minimum Throw Damage"	159	1			1	6					i												"%+d to Minimum Damage"	"From %d - %d to Minimum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			dmg-min
+	"Maximum Throw Damage"	160	1			1	7					i												"%+d to Maximum Damage"	"From %d - %d to Maximum Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			dmg-max
+dmg-throw	"Throw Damage"		1			2	6	7				i												"%+d to Damage"	"From %d - %d to Damage"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							2FIELDS
+dru	"Druid Skills"		100	dru	83	1	3					i	+											"%+d to Druid Skill Levels"	"From %d - %d to Druid Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			allskills
+ass	"Assassin Skills"		100	ass	83	1	3					i	+											"%+d to Assassin Skill Levels"	"From %d - %d to Assassin Skill Levels"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD			allskills
+skilltab	"Skill Set"	188	100			2	16	3				s	"Skill Set"		i	Level								"%+d%s (%s Only)"		SKILL_SET_UP	SKILL_LEVEL	SKILL_SET	SKILL_SET	INTEGER	NON_ZERO					2NDFIELD
+sock	"Extra Socket"	194	100			1	4					i		?										"Increased Sockets by %d"		SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+att-skill	"Cast Spell on attack"	195	100			3	6	10	7			s	Spell		i	Level		i	"Chance to cast"	%				"%d%% Chance to cast Level %d %s on attack"		CAST_SPELL	SKILL_CHANCE_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO	INTEGER	NON_ZERO			3RDFIELD
+kill-skill	"Cast Spell on kill"	196	100			3	6	10	7			s	Spell		i	Level		i	"Chance to cast"	%				"%d%% Chance to cast Level %d %s When You Kill an Enemy"		CAST_SPELL	SKILL_CHANCE_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO	INTEGER	NON_ZERO			3RDFIELD
+death-skill	"Cast Spell on death"	197	100			3	6	10	7			s	Spell		i	Level		i	"Chance to cast"	%				"%d%% Chance to cast Level %d %s When You Die"		CAST_SPELL	SKILL_CHANCE_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO	INTEGER	NON_ZERO			3RDFIELD
+hit-skill	"Cast Spell on striking"	198	100			3	6	10	7			s	Spell		i	Level		i	"Chance to cast"	%				"%d%% Chance to cast Level %d %s on striking"		CAST_SPELL	SKILL_CHANCE_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO	INTEGER	NON_ZERO			3RDFIELD
+levelup-skill	"Cast Spell on levelup"	199	100			3	6	10	7			s	Spell		i	Level		i	"Chance to cast"	%				"%d%% Chance to cast Level %d %s When You Level Up"		CAST_SPELL	SKILL_CHANCE_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO	INTEGER	NON_ZERO			3RDFIELD
+gethit-skill	"Cast Spell when struck"	201	100			3	6	10	7			s	Spell		i	Level		i	"Chance to cast"	%				"%d%% Chance to cast Level %d %s when struck"		CAST_SPELL	SKILL_CHANCE_LEVEL	SKILL	SKILL	INTEGER	NON_ZERO	INTEGER	NON_ZERO			3RDFIELD
+charged	"Charged Spell"	204	100		204	4	6	10	8	8		s	Spell		i	Level		i	Charges		i	"Maximum Charges"		"Level %d %s (%d/%d Charges)"		CHARGED_SPELL	CHARGED_SPELL	SKILL	SKILL	INTEGER	NON_ZERO	INTEGER	TRUE	INTEGER	NON_ZERO	3RD4THFIELDS
+ac/lvl	"Defense per Level"	214	100			1	6					d	Defense											"%+d to Defense (Based on Character Level)"	"From %d - %d to Defense (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+ac%/lvl	"% Defense per Level"	215	100			1	6					d	Defense	%										"%+d%% to Defense (Based on Character Level)"	"From %d%% - %d%% to Defense (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+hp/lvl	"Life per Level"	216	100			1	6					d	Life											"%+d to Life (Based on Character Level)"	"From %d - %d to Life (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+mana/lvl	"Mana per Level"	217	100			1	6					d	Mana											"%+d to Mana (Based on Character Level)"	"From %d - %d to Mana (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dmg/lvl	"Maximum Damage per Level"	218	100			1	6					d	"Maximum Damage"											"%+d to Maximum Damage (Based on Character Level)"	"From %d - %d to Maximum Damage (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dmg%/lvl	"% Maximum Damage per Level"	219	100			1	6					d	"Maximum Damage"	%										"%+d%% to Maximum Damage (Based on Character Level)"	"From %d%% - %d%% to Maximum Damage (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+str/lvl	"Strength per Level"	220	100			1	6					d	"Strength"											"%+d to Strength (Based on Character Level)"	"From %d - %d to Strength (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dex/lvl	"Dexterity per Level"	221	100			1	6					d	"Dexterity"											"%+d to Dexterity (Based on Character Level)"	"From %d - %d to Dexterity (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+enr/lvl	"Energy per Level"	222	100			1	6					d	"Energy"											"%+d to Energy (Based on Character Level)"	"From %d - %d to Energy (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+vit/lvl	"Vitality per Level"	223	100			1	6					d	"Vitality"											"%+d to Vitality (Based on Character Level)"	"From %d - %d to Vitality (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+att/lvl	"Attack Rating per Level"	224	100			1	6					d	"Attack Rating"											"%+d to Attack Rating (Based on Character Level)"	"From %d - %d to Attack Rating (Based on Character Level)"	HALVES_PER_LEVEL	PARAM	HALVES	NON_ZERO							1FIELD
+att%/lvl	"% Attack Rating per Level"	225	100			1	6					d	"Attack Rating"	%										"%d%% Bonus to Attack Rating (Based on Character Level)"	"From %d%% - %d%% Bonus to Attack Rating (Based on Character Level)"	HALVES_PER_LEVEL	PARAM	HALVES	NON_ZERO							1FIELD
+dmg-cold/lvl	"Maximum Cold Damage per Level"	226	100			1	6					d	"Maximum Cold Damage"											"%+d to Maximum Cold Damage (Based on Character Level)"	"From %d - %d to Maximum Cold Damage (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dmg-fire/lvl	"Maximum Fire Damage per Level"	227	100			1	6					d	"Maximum Fire Damage"											"%+d to Maximum Fire Damage (Based on Character Level)"	"From %d - %d to Maximum Fire Damage (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dmg-ltng/lvl	"Maximum Lightning Damage per Level"	228	100			1	6					d	"Maximum Lightning Damage"											"%+d to Maximum Lightning Damage (Based on Character Level)"	"From %d - %d to Maximum Lightning Damage (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dmg-pois/lvl	"Maximum Poison Damage per Level"	229	100			1	6					d	"Maximum Poison Damage"											"%+d to Maximum Poison Damage (Based on Character Level)"	"From %d - %d to Maximum Poison Damage (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+res-cold/lvl	"Maximum Cold Resist per Level"	230	100			1	6					d	"Maximum Cold Resist"											"%+d to Maximum Cold Resist (Based on Character Level)"	"From %d - %d to Maximum Cold Resist (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+res-fire/lvl	"Maximum Fire Resist per Level"	231	100			1	6					d	"Maximum Fire Resist"											"%+d to Maximum Fire Resist (Based on Character Level)"	"From %d - %d to Maximum Fire Resist (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+res-ltng/lvl	"Maximum Lightning Resist per Level"	232	100			1	6					d	"Maximum Lightning Resist"											"%+d to Maximum Resist Damage (Based on Character Level)"	"From %d - %d to Maximum Lightning Resist (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+res-pois/lvl	"Maximum Poison Resist per Level"	233	100			1	6					d	"Maximum Poison Resist"											"%+d to Maximum Poison Resist (Based on Character Level)"	"From %d - %d to Maximum Poison Resist (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+abs-cold/lvl	"Cold Absorb per Level"	234	100			1	6					d	"Cold Absorb"											"%+d to Cold Absorb (Based on Character Level)"	"From %d - %d to Cold Absorb (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+abs-fire/lvl	"Fire Absorb per Level"	235	100			1	6					d	"Fire Absorb"											"%+d to Fire Absorb (Based on Character Level)"	"From %d - %d to Fire Absorb (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+abs-ltng/lvl	"Lightning Absorb per Level"	236	100			1	6					d	"Lightning Absorb"											"%+d to Lightning Absorb (Based on Character Level)"	"From %d - %d to Lightning Absorb (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+abs-pois/lvl	"Poison Absorb per Level"	237	100			1	6					d	"Poison Absorb"											"%+d to Poison Absorb (Based on Character Level)"	"From %d - %d to Poison Absorb (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+thorns/lvl	"Attacker Takes Damage per Level"	238	100			1	5					d	"Attacker Takes Damage"											"Attacker Takes Damage of %d (Based on Character Level)"	"Attacker takes Damage of %d - %d (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+gold%/lvl	"% Extra Gold per Level"	239	100			1	6					d	"Extra Gold"	%										"%d%% Extra Gold (Based on Character Level)"	"%d%% - %d%% Extra Gold (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+mag%/lvl	"% Better Magic Find per Level"	240	100			1	6					d	"Better Chance of Magic Items"	%										"%d%% Better Chance of Getting Magic Items (Based on Character Level)"	"%d%% - %d%% Better Chance of Getting Magic Items (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+regen-stam/lvl	"% Regenerate Stamina per Level"	241	100			1	6					d	"Regenerate Stamina"	%										"Heal Stamina Plus %d%% (Based on Character Level)"	"Heal Stamina Plus %d%% - %d%% (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+stam/lvl	"Stamina per Level"	242	100			1	6					d	"Stamina"											"%+d to Maximum Stamina (Based on Character Level)"	"From %d - %d to Maximum Stamina (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dmg-dem/lvl	"% Damage to Demons per Level"	243	100			1	6					d	"Damage to Demons"	%										"%d%% Damage to Demons (Based on Character Level)"	"From %d%% - %d%% Damage to Demons (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+dmg-und/lvl	"% Damage to Undead per Level"	244	100			1	6					d	"Damage to Undead"	%										"%d%% Damage to Undead (Based on Character Level)"	"From %d%% - %d%% Damage to Undead (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+att-dem/lvl	"% Attack Rating Against Demons per Level"	245	100			1	6					d	"Attack Rating"	%										"%d%% Bonus to Attack Rating Against Demons (Based on Character Level)"	"From %d%% - %d%% Bonus to Attack Rating Against Demons (Based on Character Level)"	HALVES_PER_LEVEL	PARAM	HALVES	NON_ZERO							1FIELD
+att-und/lvl	"% Attack Rating Against Undead per Level"	246	100			1	6					d	"Attack Rating"	%										"%d%% Bonus to Attack Rating Against Undead (Based on Character Level)"	"From %d%% - %d%% Bonus to Attack Rating Against Undead (Based on Character Level)"	HALVES_PER_LEVEL	PARAM	HALVES	NON_ZERO							1FIELD
+crush/lvl	"% Crushing Blow per Level"	247	100			1	6					d	"Crushing Blow"	%										"%d%% Crushing Blow (Based on Character Level)"	"From %d%% - %d%% Crushing Blow (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+wounds/lvl	"% Open Wounds per Level"	248	100			1	6					d	"Open Wounds"	%										"%d%% Open Wounds (Based on Character Level)"	"From %d%% - %d%% Open Wounds (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+kick/lvl	"Kick Damage per Level"	249	100			1	6					d	"Kick Damage"											"%d Kick Damage (Based on Character Level)"	"From %d - %d Kick Damage (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+deadly/lvl	"% Deadly Strike per Level"	250	100			1	6					d	"Deadly Strike"	%										"%d%% Deadly Strike (Based on Character Level)"	"From %d%% - %d%% Deadly Strike (Based on Character Level)"	EIGHTHS_PER_LEVEL	PARAM	EIGHTHS	NON_ZERO							1FIELD
+rep-dur	"Repair Durability"	252	100			1	6					d	Period	seconds										"Repairs 1 durability in %d seconds"	"Repairs %d durability per second"	FREQUENCY	PARAM	FREQUENCY	NON_ZERO							1FIELD
+rep-quant	"Replenish Quantity"	253	100			1	6					d	Period	seconds										"Replenishes Quantity"		BOOLEAN	PARAM	FREQUENCY	NON_ZERO							1FIELD
+stack	"Increased Stack Size"	254	100			1	8					i	"Added Stack"											"Increased Stack Size"		SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+
+ac/time	"Defense per Time Increment"	268	100			3	2	10	10			i	"+"											"%+d to Defense (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+ac%/time	"% Defense per Time Increment"	269	100			3	2	10	10			i	"Enhanced"	%										"%+d to Max Damage %d %s"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+hp/time	"Life per Time Increment"	270	100			3	2	10	10			i	"+"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+mana/time	"Mana per Time Increment"	271	100			3	2	10	10			i	"+"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg/time	"Max Damage per Time Increment"	272	100			3	2	10	10			i												"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg%/time	"% Max Damage per Time Increment"	273	100			3	2	10	10			i	"Enhanced"	%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+str/time	"Strength per Time Increment"	274	100			3	2	10	10			i	+											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dex/time	"Dexterity per Time Increment"	275	100			3	2	10	10			i	+											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+enr/time	"Energy per Time Increment"	276	100			3	2	10	10			i	+											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+vit/time	"Vitality per Time Increment"	277	100			3	2	10	10			i	+											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+att/time	"Attack Rating per Time Increment"	278	100			3	2	10	10			i	+											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+att%/time	"% Attack Rating per Time Increment"	279	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg-cold/time	"Cold Damage per Time Increment"	280	100			3	2	10	10			i	"Cold Damage"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg-fire/time	"Fire Damage per Time Increment"	281	100			3	2	10	10			i	"Fire Damage"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg-ltng/time	"Lightning Damage per Time Increment"	282	100			3	2	10	10			i	"Lightning Damage"	%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg-pois/time	"Poison Damage per Time Increment"	283	100			3	2	10	10			i	"Poison Damage"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+res-cold/time	"Cold Resist per Time Increment"	284	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+res-fire/time	"Fire Resist per Time Increment"	285	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+res-ltng/time	"Lightning Resist per Time Increment"	286	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+res-pois/time	"Poison Resist per Time Increment"	287	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+abs-cold/time	"Cold Absorb per Time Increment"	288	100			3	2	10	10			i												"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+abs-fire/time	"Fire Absorb per Time Increment"	289	100			3	2	10	10			i												"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+abs-ltng/time	"Lightning Absorb per Time Increment"	290	100			3	2	10	10			i												"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+abs-pois/time	"Poison Absorb per Time Increment"	291	100			3	2	10	10			i												"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+gold%/time	"% More Gold per Time Increment"	292	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+mag%/time	"% Magic Find per Time Increment"	293	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+regen-stam/time	"Heal Stamina per Time Increment"	294	100			3	2	10	10			d	"Regenerate Stamina"	%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+stam/time	"Stamina per Time Increment"	295	100			3	2	10	10			d	"Stamina"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg-dem/time	"Damage to Demons per Time Increment"	296	100			3	2	10	10			i	""	%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+dmg-und/time	"Damage to Undead per Time Increment"	297	100			3	2	10	10			i	""	%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+att-dem/time	"Attack Rating against Demons per Time Increment"	298	100			3	2	10	10			i	""											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+att-und/time	"Attack Rating against Undead per Time Increment"	299	100			3	2	10	10			i	""											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+crush/time	"Crushing Blow per Time Increment"	300	100			3	2	10	10			i	"Chance"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+wounds/time	"Open Wounds per Time Increment"	301	100			3	2	10	10			i	"Chance"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+kick/time	"Kick Damage per Time Increment"	302	100			3	2	10	10			d	"Kick Damage"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+deadly/time	"Deadly Strike per Time Increment"	303	100			3	2	10	10			d	"Chance"											"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+gems%/time	"% Gem Find per Time Increment"	304	100			3	2	10	10			i		%										"%+d to xxx (%s)"	""	SIMPLE	MIN_MAX	TIME_OF_DAY	NON_ZERO							1FIELD
+
+
+	"Reduce Target Cold Resistance"	305	100			1	8				50	i	to	%										"%+d%% to Enemy Cold Resistance"	"%d%%-%d%% to Enemy Cold Resistance"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+	"Reduce Target Fire Resistance"	306	100			1	8				50	i	to	%										"%+d%% to Enemy Fire Resistance"	"%d%%-%d%% to Enemy Fire Resistance"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+	"Reduce Target Lightning Resistance"	307	100			1	8				50	i	to	%										"%+d%% to Enemy Lightning Resistance"	"%d%%-%d%% to Enemy Lightning Resistance"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+	"Reduce Target Poison Resistance"	308	100			1	8				50	i	to	%										"%+d%% to Enemy Poison Resistance"	"%d%%-%d%% to Enemy Poison Resistance"	SIMPLE	MIN_MAX	INTEGER	NON_ZERO							1FIELD
+
+extra-fire	"Increase Fire Skill Damage"	329	100			1	9				50	i	to	%										"%+d%% to Fire Skill Damage"		SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+extra-ltng	"Increase Lightning Skill Damage"	330	100			1	9				50	i	to	%										"%+d%% to Lightning Skill Damage"		SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+extra-cold	"Increase Cold Skill Damage"	331	100			1	9				50	i	to	%										"%+d%% to Cold Skill Damage"		SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+extra-pois	"Increase Poison Skill Damage"	332	100			1	9				50	i	to	%										"%+d%% to Poison Skill Damage"		SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+
+pierce-fire	"Reduce Target Fire Resistance"	333	100			1	8					i	to	%										"-%d%% to Enemy Fire Resistance"	"%d%%-%d%% to Enemy Fire Resistance"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+pierce-ltng	"Reduce Target Lightning Resistance"	334	100			1	8					i	to	%										"-%d%% to Enemy Lightning Resistance"	"%d%%-%d%% to Enemy Lightning Resistance"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+pierce-cold	"Reduce Target Cold Resistance"	335	100			1	8					i	to	%										"-%d%% to Enemy Cold Resistance"	"%d%%-%d%% to Enemy Cold Resistance"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+pierce-pois	"Reduce Target Poison Resistance"	336	100			1	8					i	to	%										"-%d%% to Enemy Poison Resistance"	"%d%%-%d%% to Enemy Poison Resistance"	SIMPLE	MIN_MAX	INTEGER	TRUE							1FIELD
+
+questitemdifficulty	"Quest Item Difficulty"	356	100			1	2					i	to	%										"Quest Item Difficulty: %d"	""	IGNORE	MIN_MAX	INTEGER	TRUE							1FIELD
+
+xxx	"END OF PROPERTY LIST"	511	1			0																		"END OF PROPERTY LIST"		BOOLEAN										NOOP
+
+

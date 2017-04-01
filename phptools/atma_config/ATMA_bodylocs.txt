@@ -1,0 +1,14 @@
+Body Location	shortloc	Code
+None	(none)	
+Head	head	head
+Neck	neck	neck
+Torso	torso	tors
+Right Arm	hand	rarm
+Left Arm	hand	larm
+Right Ring	finger	rrin
+Left Ring	finger	lrin
+Belt	waist	belt
+Feet	feet	feet
+Gloves	hands	glov
+Right Arm (Alt.)	hand	rarm
+Left Arm (Alt.)	hand	larm

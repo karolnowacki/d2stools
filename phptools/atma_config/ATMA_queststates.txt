@@ -1,0 +1,233 @@
+code	hexValue	hexMask	dontcareMask	qsts	sName	Description	reqItem1	reqItem2	reqItem3	reqItem4	noItem1	noItem2	noItem3	noItem4	noItem5	Notes
+axqxs0	0000	ffff	0000		Inactive											
+axqxsc	2001	2001	1ffc	qstsComplete	"Quest Complete"	"Quest completed."										
+axqxsp	0001	2001	1ffc	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+a1q1s1	0004	0017	0008	qstsa1q11	"Look for the Den"	"Look for the Den in the wilderness outside the Rogues' Camp."										"Not sure what bit 3 is for; it was set for Druid when he got the quest from Akara, but not for Assassin.  Paladin, who never spoke to Akara, never had this bit set."
+a1q1s2	0010	0013	000c	qstsa1q12	"Kill all monsters"	"Kill all the monsters in the Den."										
+a1q1s2mon	0010	0013	000c	qstsa1q14	"Few monsters left"	"Monsters remaining:"										"Cannot set this in a saved game; depends on monsters which are regenerated when you reload"
+a1q1s2mon1	0010	0013	000c	qstsa1q140	"One monster left"	"One monster left."										"Cannot set this in a saved game; depends on monsters which are regenerated when you reload"
+a1q1s3	2012	0003	200c	qstsa1q15	"See Akara for reward"	"Return to Akara for a reward."										
+																
+a1q2s1	000c	0017	0008	qstsa1q21	"Look for Blood Raven"	"Look for Blood Raven in the Burial Grounds next to the Cold Plains."										"In the Druid game, the value was 4 before he even received the quest from Kashya.  It got set just after receiving the reward from Akara for completing quest #1."
+a1q2s2	001c	0017	0000	qstsa1q22	"Kill Blood Raven"	"Kill Blood Raven."										
+a1q2s3	201e	0003	2000	qstsa1q23	"See Kashya for reward"	"Return to Kashya for a reward."										
+a1q2sc	201d	2001	101c	qstsComplete	"Quest Complete"	"Quest completed."										
+a1q2sp	001d	2001	101c	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+a1q3s0	0000	ffff	0000		Inactive						hdm					
+a1q3s1	000c	0047	0000	qstsa1q31	"Look for Malus"	"Look for the Horadric Malus in the Monastery Barracks. Beware of the Smith that guards it."					hdm					
+a1q3s2	004c	0047	0000	qstsa1q32	"Return Malus to Charsi"	"Return the Horadric Malus to Charsi."	hdm									
+a1q3s3	204e	0003	2000	qstsa1q32b	"Charsi will imbue item"	"Charsi will imbue an item with magical power."					hdm					
+a1q3sc	204d	2001	104c	qstsComplete	"Quest Complete"	"Quest completed."					hdm					
+a1q3sp	004d	2001	904c	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					hdm					"Bit 15 is a new one on me.  Bork 30 doesn't have it set.  Found it on Haal 31 right after he beat Normal Diablo.  Found in on Zrvp while in Act III."
+				qstsa1q3x	"Malus is gone"	"The person with the malus quit the game."					hdm					
+																
+a1q4s0	0000	ffff	0000		Inactive						bks	bkd				
+a1q4s1	0004	001f	0000	qstsa1q41	"Find the Scroll"	"Go through the Underground Passage to the Dark Wood, search for the Tree of Inifuss, and recover the Scroll."					bks	bkd				
+a1q4s1a	0008	001f	0004	qstsa1q41	"Find the Scroll"	"Go through the Underground Passage to the Dark Wood, search for the Tree of Inifuss, and recover the Scroll."					bks	bkd				"This is what happens if you drop the scroll (apparently)"
+a1q4s2	000c	001b	0004	qstsa1q42	"Take Scroll to Akara"	"Take the Scroll of Inifuss to Akara."	bks				bkd					
+a1q4s3	000c	001b	0004	qstsa1q43	"Go to Tristram"	"Go to the Cairn Stones in the Stony Field. Touch the Stones in the order found on the Scroll of Inifuss. Enter the portal to Tristram, but beware the danger that lies ahead."	bkd				bks					
+a1q4s4	001c	001b	0004	qstsa1q44	"Find Deckard Cain"	"Find and rescue Deckard Cain."					bks	bkd				
+				qstsa1q45	"Cain is safe"	"Cain has been rescued and is now at the Rogue Encampment."					bks	bkd				
+a1q4s5	201e	0003	2004	qstsa1q46	"Visit Cain and Akara"	"Visit Cain and Akara in the Rogue Encampment."					bks	bkd				
+				qstsa1q46b	"Return for reward"	"Talk to Akara for a reward."					bks	bkd				
+a1q4sc	201d	2001	141c	qstsComplete	"Quest Complete"	"Quest completed."					bks	bkd				"Bit 10 indicates whether you have completed the hidden Cow Level."
+a1q4sp	001d	2001	141c	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					bks	bkd				
+a1q4sx	4000	4001	341e	qstsThankYouComeAgain	"Some help you are"	"You cannot complete this quest in this game. You can complete it by creating a new game."										
+				qstsa1q4x		"The person with the horadric scroll quit the game."										
+																
+a1q5s1	0004	0057	0000	qstsa1q51	"Look for the Tower"	"Look for the Tower in the Black Marsh beyond the Dark Wood."										
+a1q5s2	0044	0057	0000	qstsa1q51a	"Explore the Tower"	"Explore the cellar dungeons beneath the Tower ruins."										
+				qstsa1q51b	"Explore the Tower"	"Explore the cellar dungeons beneath the Tower ruins."										
+a1q5s3	0054	0057	0000	qstsa1q52	"Dispose of Countess"	"Dispose of the evil Countess."										
+a1q5s4	2055	2001	1054	qstsComplete	"Quest Complete"	"Quest completed."										
+a1q5s5	0055	2001	1054	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+a1q6s1	000c	0001	0000	qstsa1q61	"Find Andariel"	"Find Andariel's Lair in the depths of the Monastery Catacombs."										
+				qstsa1q62		"Kill Andariel."										
+	201e	2003	2000	qstsa1q62b		"Return to Warriv to take the Caravan East."										
+a1q6s2	201e	2003	2000	qstsa1q63	"Return to Warriv"	"Return to Warriv to take the Caravan East."										
+a1q6s3	201d	2001	101c	qstsComplete	"Quest Complete"	"Quest completed."										
+a1q6s4	001d	2001	101c	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+				qstsa2q01		"Lut Gholein"										
+																
+a2q1s1	0004	0007	0000	qstsa2q11	"Find Radament"	"Find Radament's Lair in the Lut Gholein sewers."										
+a2q1s2	0014	0013	0004	qstsa2q12	"Kill Radament"	"Kill Radament."										
+a2q1s3	2036	0013	0004	qstsa2q13	"Return to Atma"	"Return to Atma for a reward."										
+a2q1sc	201d	2001	101c	qstsComplete	"Quest Complete"	"Quest completed."										
+a2q1sp	001d	2001	101c	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+a2q2s0	0000	ffff	0000		Inactive						tr1	msf	vip	hst		
+a2q2s1	0000	ffff	0000	qstsa2q21	"Show scroll to Cain"	"Show the scroll to Cain in Lut Gholein."	tr1				msf	vip	hst			
+a2q2s2	0008	087f	0000	qstsa2q22	"Find Staff pieces"	"Search the Halls of the Dead under the Dry Hills for the Cube. Search the Maggot Lair under the Far Oasis for the Shaft. Search the Claw Viper Temple for the Headpiece."					tr1	hst				
+a2q2s2a	0048	087f	0000	qstsa2q22	"Find Staff pieces"	"Search the Halls of the Dead under the Dry Hills for the Cube. Search the Maggot Lair under the Far Oasis for the Shaft. Search the Claw Viper Temple for the Headpiece."	box				hst					"She 07 was in state 0x0048 when She got the Amulet, but before talking with the townsfolk to complete quest 3."
+a2q2s2b	0058	087f	0000	qstsa2q22	"Find Staff pieces"	"Search the Halls of the Dead under the Dry Hills for the Cube. Search the Maggot Lair under the Far Oasis for the Shaft. Search the Claw Viper Temple for the Headpiece."	box	vip			hst					"Bit 4 appears to indicate whether Cain has talked to you about the Viper Amulet.  Bit 5 indicates Cain has talked to you about the Staff of Kings.  I think bit 6 is set when you pick either one up, but I'm still unclear on this bit."
+a2q2s2c	0068	087f	0000	qstsa2q22	"Find Staff pieces"	"Search the Halls of the Dead under the Dry Hills for the Cube. Search the Maggot Lair under the Far Oasis for the Shaft. Search the Claw Viper Temple for the Headpiece."	box	msf			hst					
+a2q2s3	0078	087f	0000	qstsa2q23	"Restore the Staff"	"Use the Horadric Cube to restore the Staff."	box	msf	vip		hst					
+a2q2s4	0c78	084b	0430	qstsa2q24	"Take Staff to Tomb"	"Take the Staff into Tal Rasha's Tomb."	hst				msf	vip				"Bit 10 is set after talking to Cain about the Horadric Staff you made.  Bit 11 is set when you make the H. Staff."
+a2q2s4a	0800	084b	0430	qstsa2q24	"Take Staff to Tomb"	"Take the Staff into Tal Rasha's Tomb."	hst				msf	vip				"See Rufus 48-53.  Whether he had the Staff or not, the value was 0x0800 until he read Horazon's Journal, at which time it was 0x0848.  Needs a *lot* more research."
+a2q2s1a	0000	ffff	0000	qstsa2q25	"Take pieces to Cain"	"Take the artifacts to Cain in Lut Gholein."	msf				hst					"These three entries are basically the same state;"
+a2q2s1b	0000	ffff	0000	qstsa2q25	"Take pieces to Cain"	"Take the artifacts to Cain in Lut Gholein."	vip				hst					"it shows up when you have any number of pieces."
+a2q2s1c	0000	ffff	0000	qstsa2q25	"Take pieces to Cain"	"Take the artifacts to Cain in Lut Gholein."	box				hst					"Not sure how to distinguish it from state 0 in later difficulties where you enter the act with the Cube."
+a2q2sc	2c79	2001	1cfc	qstsComplete	"Quest Complete"	"Quest completed."					msf	vip	hst			
+a2q2sp	0c79	2001	1cfc	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					msf	vip	hst			
+																
+				qstsa2q31		"Look for the source of the darkness."					vip					
+a2q3s1	0004	000f	0000	qstsa2q31a	"Ask about darkness"	"Ask Drognan about the strange darkness."					vip					
+a2q3s2	000c	000f	0000	qstsa2q32	"Destroy Serpent Altar"	"Destroy the Serpent Altar in the Claw Viper Temple beneath the Valley of Snakes."					vip					
+a2q3s3	200e	0003	100c	qstsa2q33	"Talk to people"	"Speak with the townsfolk in Lut Gholein."										
+a2q3sc	200d	2001	100c	qstsComplete	"Quest Complete"	"Quest completed."										
+a2q3sp	000d	2001	100c	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+a2q4s0	0000	ff7b	0084		Inactive						hst					"This changed to 0x0080 for She when She spoke to Kaelan (who said, ""You may not pass."")"
+a2q4s2	0084	ff7f	0080	qstsa2q41	"Look for the Sanctuary"	"Look for the Arcane Sanctuary within the Palace."	hst									"Looks like this changed from 0x0084 to 0x008c after talking to Jerhyn.  For Rufus, this value was 0x0004 after talking to Drognan."
+a2q4s1	0080	ffff	0000	qstsa2q41a	"Talk to Drognan"	"Talk to Drognan."	hst									
+a2q4s3	01bc	010f	0020	qstsa2q42	"Find the Journal"	"Find Horazon's Journal."	hst									"This was 0x012c for Rufus, but he cheated and didn't go through the Palace"
+	2183	0003	3180	qstsa2q43	"Quest Complete"	"Continue the search for the Seventh Tomb."	hst									"Um... the quest was complete with this value?"
+a2q4sc	2183	2001	1182	qstsComplete	"Quest Complete"	"Quest completed."										
+a2q4sp	0181	2003	1180	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+				qstsa2q51		"Beware the Summoner."										
+a2q5s1	0004	0007	0000	qstsa2q52	"Kill the Summoner"	"Kill the Summoner."										
+a2q5s2	2006	0007	0000	qstsa2q53	"Return to town"	"Return to town for more information."										
+a2q5sc	2005	2001	1004	qstsComplete	"Quest Complete"	"Quest completed."										
+a2q5sp	0005	2001	1004	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+a2q6s1	0004	003f	0000	qstsa2q61	"Find Tal Rasha's Tomb"	"Find Tal Rasha's Tomb."										
+				qstsa2q61a	"The true Symbol"	"The Symbol of the True Tomb of Tal Rasha."										"I believe this state depends on whether quest 4 is complete; But how do we reference that dependency?"
+				qstsa2q62	"Kill Duriel"	"Kill Duriel."										
+a2q6s2	0024	003f	0000	qstsa2q63	"Explore the Tomb"	"Explore Tal Rasha'a Chamber."					hst	msf	vip			
+				qstsa2q63a		"Talk to Jerhyn."					hst	msf	vip			
+				qstsa2q63f		"Explore Tal Rasha's Tomb"					hst	msf	vip			
+a2q6s3	002c	003f	2fc0	qstsa2q64	"Talk to Jerhyn"	"Talk to Jerhyn."					hst	msf	vip			"Bits 6-11 in the rest of the states indicate which NPC's have praised you for killing Duriel."
+a2q6s4	2ff4	003f	2fc0	qstsa2q65	"Talk to Meshif"	"Talk to Meshif."					hst	msf	vip			"6=Atma, 7=Warriv, 8=Drognan, 9=Lysander, 10=Cain, 11=Fara"
+a2q6sc	2fe5	2001	1fe4	qstsComplete	"Quest Complete"	"Quest completed."					hst	msf	vip			
+a2q6sp	0fe5	2001	1fe4	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					hst	msf	vip			"Bork 30 has this set at 1fe5.  Haal 31 has this set at 0c25.  Haal 42 has this set at 0e25.  Zrvp 49 has this set at 0fe5."
+																
+				qstsa3q01		"Jungle Village"										
+																
+a3q1s0	0000	ffff	0000		Inactive						bbb					
+a3q1s1	0004	0007	0000	qstsa3q11	"Find Lam Esen's Tome"	"Search the six temples in the Bazaar, Upper Kurast, and the Causeway for Lam Esen's Tome."					bbb					
+a3q1s2	0004	0003	0004	qstsa3q12	"Give Tome to Alkor"	"Talk to Alkor."	bbb									
+a3q1sc	2005	2001	1004	qstsComplete	"Quest Complete"	"Quest completed."					bbb					
+a3q1sp	0005	2001	1004	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					bbb					
+																
+a3q2s0	0000	ffff	0000		Inactive						qey	qbr	qhr	qf1	qf2	
+a3q2s1	0004	0057	0000	qstsa3q21	"Search for the Eye"	"Find Khalim's relics. Search for his Eye in the Spider Cavern."					qey	qf2				
+a3q2s1a	0000	ffff	0000	qstsa3q21	"Search for the Eye"	"Find Khalim's relics. Search for his Eye in the Spider Cavern."	qbr				qey	qf2				"Interesting... The state can be 0 even if you have Khalim's relics, if Cain has not yet given you this quest."
+a3q2s1b	0000	ffff	0000	qstsa3q21	"Search for the Eye"	"Find Khalim's relics. Search for his Eye in the Spider Cavern."	qhr				qey	qf2				
+a3q2s1c	0000	ffff	0000	qstsa3q21	"Search for the Eye"	"Find Khalim's relics. Search for his Eye in the Spider Cavern."	qf1				qey	qf2				
+				qstsa3q21a		"Ask Cain about Khalim's relics."	qey	qbr	qhr	qf1	qf2					
+a3q2s2	0004	0057	0000	qstsa3q22	"Search for the Brain"	"Search for Khalim's Brain in the Flayer Dungeon."	qey				qbr	qf2				
+a3q2s2a	0000	ffff	0000	qstsa3q22	"Search for the Brain"	"Search for Khalim's Brain in the Flayer Dungeon."	qey				qbr	qf2				
+a3q2s4	005c	0057	0000	qstsa3q23	"Search for the Flail"	"Search for Khalim's Flail in Travincal. Beware the High Council."	qey	qbr	qhr		qf1	qf2				
+a3q2s4a	0000	ffff	0000	qstsa3q23	"Search for the Flail"	"Search for Khalim's Flail in Travincal. Beware the High Council."	qey	qbr	qhr		qf1	qf2				
+a3q2s3	0004	0057	0000	qstsa3q24	"Search for the Heart"	"Search for Khalim's Heart in the Sewers under the Kurast Bazaar."	qey	qbr			qhr	qf2				
+a3q2s3a	0000	ffff	0000	qstsa3q24	"Search for the Heart"	"Search for Khalim's Heart in the Sewers under the Kurast Bazaar."	qey	qbr			qhr	qf2				
+a3q2s5				qstsa3q25	"Transmute the Flail"	"Transmute Khalim's relics - the Flail, Eye, Heart, and Brain - with the Horadric Cube."	qey	qbr	qhr	qf1	qf2					
+a3q2s6	00fc	007f	0080	qstsa3q26	"Smash the Orb"	"Use Khalim's Will to smash the Compelling Orb."	qf2				qey	qbr	qhr	qf1		
+a3q2sc	20fd	2001	10fc	qstsComplete	"Quest Complete"	"Quest completed."					qey	qbr	qhr	qf1	qf2	
+a3q2sp	00fd	2001	10fc	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					qey	qbr	qhr	qf1	qf2	"Bork 30 has this set at 107d.  Haal 31 has this set at 1005."
+																
+a3q3s0	0000	ffff	0000		Inactive						g33					
+a3q3s1	0008	001b	0000	qstsa3q31	"Look for the Gidbinn"	"Look for the Gidbinn in the Flayer Jungle."					g33					"This hasn't been verified yet"
+				qstsa3q31a		"Ask around the Docks about the Gidbinn."					g33					
+a3q3s2	0018	0213	000c	qstsa3q32	"Pick up the Gidbinn"	"Pick up the Gidbinn."					g33					"I think bit 2 is set if you find the Gidbinn on your own, and bit 3 is set if you are asked to find it."
+a3q3s3	0234	02f3	000c	qstsa3q33	"Return the Gidbinn"	"Return the Gidbinn to Ormus."	g33									"This could be either 0x0234 or 0x0238"
+a3q3s4	0278	02f3	000c	qstsa3q34	"Talk to Asheara"	"Talk to Asheara."					g33					
+a3q3s5	02f8	02f3	000c	qstsa3q35	"Talk to Ormus"	"Talk to Ormus."					g33					
+a3q3sc	23f9	2001	13fc	qstsComplete	"Quest Complete"	"Quest completed."					g33					"This was found to be 33f5 in Bork 52."
+a3q3sp	03f9	2001	13fc	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					g33					
+																
+a3q4s0	0000	ffff	0000		Inactive						j34	g34	xyz			
+a3q4s1	0040	0047	0000	qstsa3q41	"Ask Cain about Figurine"	"Ask Cain about the Jade Figurine."	j34				g34	xyz				"Not sure yet whether this code applies to this state or the next (whether I have talked to Cain or not).  Need to try the quest again."
+a3q4s2	0044	0057	0000	qstsa3q42	"Give Meshif Figurine"	"Show Meshif the Figurine."	j34				g34	xyz				
+a3q4s3	0044	0057	0000	qstsa3q43	"Ask Cain about Bird"	"Ask Cain about the Golden Bird."	g34				j34	xyz				
+a3q4s4	0054	0057	0000	qstsa3q44	"Give Alkor the Bird"	"Give the Golden Bird to Alkor."	g34				j34	xyz				
+a3q4s5	0056	0057	0000	qstsa3q45	"Return for reward"	"Return to Alkor for reward."					j34	g34	xyz			
+a3q4s6	2021	2021	1fdc	qstsComplete	"Quest Complete"	"Quest completed."	xyz				j34	g34				"It appears that the 0x0020 bit indicates you have not yet drunk the Potion of Life.  The value remains if you drop the potion; Not sure what would happen if you saved the game without it and re-entered."
+a3q4s7	0021	2021	1fdc	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."	xyz				j34	g34				
+a3q4sc	2001	2021	1fdc	qstsComplete	"Quest Complete"	"Quest completed."					j34	g34	xyz			
+a3q4sp	0001	2021	1fdc	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					j34	g34	xyz			
+																
+				qstsa3q51		"Find the Blackened Temple within Travincal."										"Zrvp 55 has this set to 0008, but I don't know whether it refers to state 1 or 1a."
+				qstsa3q51a		"Ask Ormus about the Blackened Temple."										
+a3q5s2	0008	001b	0004	qstsa3q52	"Kill the High Council"	"Kill the High Council."										
+a3q5s3	2018	001b	0004	qstsa3q53	"Ask Cain for help"	"Ask Cain for help."										
+a3q5sc	2019	2001	101c	qstsComplete	"Quest Complete"	"Quest completed."										
+a3q5sp	0009	2001	101c	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										"Bork 30 has this set at 1009.  Haal 31 has this set at 101d.  Zrvp 56 set it to 3019."
+																
+a3q6s0	0000	ffff	0000		Inactive											
+				qstsa3q61	"Smash the Orb"	"Smash the Compelling Orb with Khalim's Will to open the way to Mephisto's Durance."										
+				qstsa3q61a		"Ormus has news about the Guardian."										
+a3q6s2	0120	0043	0120	qstsa3q62	"Find Mephisto"	"Search for Mephisto in his Durance."					qf2					"Yes, there is a conflict here.  One possible value is 0x0100, and another is 0x0020."
+a3q6s3	0160	0043	0320	qstsa3q63	"Kill Mephisto"	"Kill Mephisto."					qf2					
+a3q6sc	2871	2001	1b70	qstsComplete	"Quest Complete"	"Quest completed."					qf2					"Bit 11 was set after killing Mephisto and cleared again after talking to Hratli.  Needs more research."
+a3q6sp	0071	2001	1b70	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					qf2					"Bork 30 has this set at 1071.  Haal 31 has this set at 1061.  Zrvp 63 set it to 3b01 after passing Act III!  Need to find out what would happen if the character left the Soulstone behind."
+																
+a4q1s1	0004	000f	0000	qstsa4q11	"Look for Izual"	"Look for Izual in the Plains of Despair."										
+a4q1s2	000c	000f	0000	qstsa4q12	"Destroy Izual"	"Destroy the demon that holds Izual's soul."										
+a4q1s4	2022	0023	0000	qstsa4q13	"See Tyrael"	"See Tyrael for reward."										"Not entirely sure about this value; see Bork 52 and Bork 63"
+a4q1s3	2002	0023	0000	qstsa4q13a	"Talk to Izual"	"Talk to Izual's Spirit."										
+a4q1sc	2021	2001	9020	qstsComplete	"Quest Complete"	"Quest completed."										"Bork 53 has this set to 8001."
+a4q1sp	0021	2001	9020	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										"Bork 30 and Haal 31 had this set to 1001 by the time they finished the game, while Zrvp 66 had it set to 1021."
+																
+a4q2s1	0004	0003	000c	qstsa4q21	"Find Diablo"	"Find Diablo in his Sanctuary."										"Looks like this can be 4 if you're told to find Diablo, and 8 if you reach the Chaos Sanctuary without instruction."
+				qstsa4q22	"Kill Diablo"	"Kill Diablo."										
+				qstsa4q23		"Break the remaining %d seals."										
+				qstsa4q24		"Break the final seal."										
+																
+a4q3s0	0000	ffff	0000		Inactive						mss	hfh				
+a4q3s1	0004	0003	002c	qstsa4q31	"Find the Hellforge"	"Take Mephisto's Soulstone to the Hellforge."	mss				hfh					"I thought this was 4, but it came up 20 when She talked to Cain (who gave She the Soulstone)."
+a4q3s2	000c	000f	0000	qstsa4q32	"Place the Soulstone"	"Destroy Mephisto's Soulstone at the Hellforge."	mss	hfh								"Needs verification; why was s1's ignore mask set to 8?"
+a4q3s3	000c	000f	0000	qstsa4q33	"Destroy the Soulstone"	"Use the Hellforge Hammer on the Forge."	hfh				mss					
+				qstsa4q34		"Consult with Cain."					mss	hfh				
+a4q3sc	2001	2001	105e	qstsComplete	"Quest Complete"	"Quest completed."					mss	hfh				
+a4q3sp	0001	2001	105e	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					mss	hfh				
+Expansion																
+																
+a5q1s1	0004	000f	0000	qsta5q11	"Stop the Siege"	"Stop the Siege by killing Shenk the Overseer in the Bloody Foothills."										
+a5q1s2	000c	000b	0004	qsta5q12	"Kill Shenk"	"Kill Shenk the Overseer."										
+a5q1s3	200e	0023	200c	qsta5q13	"Return for reward"	"Go talk to Larzuk for your reward."										
+a5q1s4	2022	0023	200c	qsta5q14	"Larzuk will add sockets"	"Larzuk will add sockets to the item of your choice."										
+																
+a5q2s1	0000	ffff	0000	qstsa5q21	"Find the Soldiers"	"Find the Soldiers in the Frigid Highlands."										"This appears to be triggered by entering the Highlands; it is not recorded."
+a5q2s2	0008	001f	0000	qstsa5q21a	"Free the soldiers"	"Free the soldiers from their prison and lead them back to town."										
+a5q2s3	0018	0017	0008	qstsa5q22	"Rescue more Soldiers"	"Rescue %d more Soldiers in the Frigid Highlands."										
+a5q2s4	203a	0027	2018	qstsa5q23	"Return for reward"	"Return to Qual-Kehk for your reward."										
+				qstsa5q24	"Apply the Runes"	"Apply the Runes to a Socketed item in this order:"										"Hey, I never saw this part!"
+																
+a5q3s1	0004	0003	000c	qstsa5q31	"Look for Anya"	"Look for Anya under the Crystalline Passage by the Frozen River."					ice					"Looks like this can be 4 if you're told to rescue Anya, and 8 if you reach the Crystalline Passage without talking to Malah."
+				qstsa5q31a		"Rescue Anya."					ice					"I think this only shows up if you're actually near Anya's prison"
+				qstsa5q32		"Talk to Malah."					ice					"State not recorded?"
+a5q3s2	000c	000b	0004	qstsa5q33	"Thaw Anya"	"Use the potion Malah gave you to thaw Anya."	ice									
+a5q3s3	200e	010b	0004	qstsa5q34	"Talk to Malah"	"Talk to Malah for your reward."					ice					
+a5q3s4	210e	010b	0004	qstsa5q35	"Talk to Anya"	"Talk to Anya."					ice					
+a5q3sc	2389	2001	0388	qstsComplete	"Quest Complete"	"Quest completed."					ice					"Look like bit 7 gets set after you read the Scroll of Resistance"
+a5q3sp	0389	2001	0388	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."					ice					
+																
+a5q4s1	000c	0007	0008	qstsa5q41	"Take Anya's portal"	"Take Anya's portal to Nihlathak's Temple."										
+				qstsa5q42		"Kill Nihlathak."										
+				qstsa5q42a		"Find Nihlathak in the Halls of Vaught."										"This state is not recorded; triggered when you enter Nihlathak's Temple"
+a5q4s2	200e	0017	0000	qstsa5q43	"Talk to Anya"	"Talk to Anya before you continue through the Crystalline Passage, past the Glacial Trail, to proceed up Mount Arreat to the Summit."										
+a5q4s3	201e	0017	0000	qstsa5q43a	"Anya will personalize"	"Anya will personalize an item for you."										
+a5q4sc	201d	2001	0000	qstsComplete	"Quest Complete"	"Quest completed."										
+a5q4sp	001d	2001	0000	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										
+																
+a5q5s1	000c	0007	0000	qstsa5q51	"Go to the Arreat Summit"	"Travel through the Ancient's Way to find the Ancients at the Arreat Summit."										
+				qstsa5q52	"Consult the Ancients"	"Consult with the Ancients by activating the Altar of the Heavens."										"Not recorded?  I have no idea how to distinguish this state"
+				qstsa5q53	"Defeat the Ancients"	"Defeat all three Ancients without leaving Mount Arreat."										
+a5q5sc	201d	2001	07e0	qstsComplete	"Quest Complete"	"Quest completed."										"Bits 5-9 in this state indicate which NPC's have praised you for passing the Ancients' test."
+a5q5sp	001d	2001	07e0	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										"5,6=Larzuk,Cain (unsure which is which), 7=Anya, 8=Malah, 9=Qual-Kehk"
+																
+				qstsa5q61		"Consult with the Ancients."										
+a5q6s1	000c	0007	0008	qstsa5q61a	"Find Baal"	"Find Baal's Throne Room."										
+				qstsa5q62	"Kill Baal"	"Kill Baal."										
+				qstsa5q62a		"Kill Baal in the Worldstone Chamber before he corrupts it."										
+				qstsa5q62b		"Kill Baal's Minions."										
+a5q6s2	300d	2087	0000	qstsa5q63	"Talk to Tyrael"	"Talk to Tyrael."										
+a5q6s3	308d	2487	0000	qstsa5q64	"Take portal to safety"	"Take Tyrael's Portal to Safety."										
+a5q6sc	248d	2401	0000	qstsComplete	"Quest Complete"	"Quest completed."										
+a5q6sp	048d	2401	0000	qstsprevious	"Quest Complete"	"You completed this quest in a previous game."										

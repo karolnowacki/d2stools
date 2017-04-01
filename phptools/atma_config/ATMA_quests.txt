@@ -1,0 +1,35 @@
+name	version	ID	act	quest	code	row	col	qsts	speech	reqQst	numStates	state0	state1	state2	state3	state4	state5	state6	state7	state8	state9	state10	state11	state12	state13	state14	state15
+None		0		-1																							
+"Act 1 Prologue"	0	1	0	-1	a1q0			qstsa1q0	WarrivAct1IntroGossip1																		
+"Den of Evil"	0	2	0	0	a1q1	0	0	qstsa1q1	A1Q1InitAkara		6	axqxs0	a1q1s1	a1q1s2	a1q1s3	axqxsc	axqxsp										
+"Sisters' Burial Grounds"	0	3	0	1	a1q2	0	1	qstsa1q2	A1Q2InitKashya		6	axqxs0	a1q2s1	a1q2s2	a1q2s3	a1q2sc	a1q2sp										
+"Tools of the Trade"	0	4	0	2	a1q3	1	1	qstsa1q3	A1Q3InitCharsi	a1q5	6	a1q3s0	a1q3s1	a1q3s2	a1q3s3	a1q3sc	a1q3sp										
+"The Search for Cain"	0	5	0	3	a1q4	0	2	qstsa1q4	A1Q4InitAkara		10	a1q4s0	a1q4s1	a1q4s1a	a1q4s2	a1q4s3	a1q4s4	a1q4s5	a1q4sc	a1q4sp	a1q4sx						
+"The Forgotten Tower"	0	6	0	4	a1q5	1	0	qstsa1q5	A1Q5InitQuestTome		6	axqxs0	a1q5s1	a1q5s2	a1q5s3	a1q5s4	a1q5s5										
+"Sisters to the Slaughter"	0	7	0	5	a1q6	1	2	qstsa1q6	A1Q6InitCain	a1q4	5	axqxs0	a1q6s1	a1q6s2	a1q6s3	a1q6s4											
+"Act 2 Prologue"	0	8	1	-1	a2q0			qstsa2q0	WarrivAct2IntroGossip1																		
+"Radament's Lair"	0	9	1	0	a2q1	0	0	qstsa2q1	A2Q1InitAtma		6	axqxs0	a2q1s1	a2q1s2	a2q1s3	a2q1sc	a2q1sp										
+"The Horadric Staff"	0	10	1	1	a2q2	0	1	qstsa2q2		a2q1	13	a2q2s0	a2q2s1	a2q2s1a	a2q2s1b	a2q2s2	a2q2s2a	a2q2s2b	a2q2s2c	a2q2s3	a2q2s4	a2q2s4a	a2q2sc	a2q2sp			
+"Tainted Sun"	0	11	1	2	a2q3	0	2	qstsa2q3			6	axqxs0	a2q3s1	a2q3s2	a2q3s3	a2q3sc	a2q3sp										
+"Arcane Sanctuary"	0	12	1	3	a2q4	1	0	qstsa2q4	A2Q4InitDrognan	a2q1	6	a2q4s0	a2q4s1	a2q4s2	a2q4s3	a2q4sc	a2q4sp										
+"The Summoner"	0	13	1	4	a2q5	1	1	qstsa2q5		a2q4	5	axqxs0	a2q5s1	a2q5s2	a2q5sc	a2q5sp											
+"The Seven Tombs"	0	14	1	5	a2q6	1	2	qstsa2q6	A2Q6InitJerhyn	a2q1	7	axqxs0	a2q6s1	a2q6s2	a2q6s3	a2q6s4	a2q6sc	a2q6sp									
+"Act 3 Prologue"	0	15	2	-1	a3q0			qstsa3q0	MeshifAct3IntroGossip1																		
+"Lam Esen's Tome"	0	16	2	0	a3q1	1	0	qstsa3q1	A3Q1InitAlkor		5	a3q1s0	a3q1s1	a3q1s2	a3q1sc	a3q1sp											
+"Khalim's Will"	0	17	2	1	a3q2	0	2	qstsa3q2	A3Q2InitCain		14	a3q2s0	a3q2s1	a3q2s1a	a3q2s1b	a3q2s1c	a3q2s2	a3q2s2a	a3q2s3	a3q2s3a	a3q2s4	a3q2s4a	a3q2s6	a3q2sc	a3q2sp		
+"Blade of the Old Religion"	0	18	2	2	a3q3	0	1	qstsa3q3	A3Q3InitHratli		8	a3q3s0	a3q3s1	a3q3s2	a3q3s3	a3q3s4	a3q3s5	a3q3sc	a3q3sp								
+"The Golden Bird"	0	19	2	3	a3q4	0	0	qstsa3q4	A3Q4Init1CainAct3		10	a3q4s0	a3q4s1	a3q4s2	a3q4s3	a3q4s4	a3q4s5	a3q4s6	a3q4s7	a3q4sc	a3q4sp						
+"The Blackened Temple"	0	20	2	4	a3q5	1	1	qstsa3q5	A3Q5InitOrmus		5	axqxs0	a3q5s2	a3q5s3	a3q5sc	a3q5sp											
+"The Guardian"	0	21	2	5	a3q6	1	2	qstsa3q6	A3Q6InitOrmus	a3q5	4	a3q6s0	a3q6s2	a3q6sc	a3q6sp												
+"Act 4 Prologue"	0	22	3	-1	a4q0			qstsa4q0	CainAct4IntroGossip1																		
+"The Fallen Angel"	0	23	3	0	a4q1	0	0	qstsa4q1	A4Q1InitTyrael		7	axqxs0	a4q1s1	a4q1s2	a4q1s3	a4q1s4	axqxsc	axqxsp									
+"Terror's End"	0	24	3	1	a4q2	0	2	qstsa4q2	A4Q2InitTyrael		4	axqxs0	a4q2s1	axqxsc	axqxsp												
+"Hell's Forge"	0	25	3	2	a4q3	0	1	qstsa4q3	A4Q3InitHasStoneCain		6	a4q3s0	a4q3s1	a4q3s2	a4q3s3	a4q3sc	a4q3sp										
+Expansion																											
+"Act 5 Prologue"	100		4	-1	a5q0				AncientsAct5IntroGossip1																		
+"Siege on Harrogath"	100		4	0	a5q1	0	0	qstsa5q1	A5Q1InitLarzuk		7	axqxs0	a5q1s1	a5q1s2	a5q1s3	a5q1s4	axqxsc	axqxsp									
+"Rescue on Mount Arreat"	100		4	1	a5q2	0	1	qstsa5q2	A5Q2InitQualKehk		7	axqxs0	a5q2s1	a5q2s2	a5q2s3	a5q2s4	axqxsc	axqxsp									
+"Prison of Ice"	100		4	2	a5q3	0	2	qstsa5q3	A5Q3InitMalah		7	axqxs0	a5q3s1	a5q3s2	a5q3s3	a5q3s4	a5q3sc	a5q3sp									
+"Betrayal of Harrogath"	100		4	3	a5q4	1	0	qstsa5q4	A5Q4InitAnya		6	axqxs0	a5q4s1	a5q4s2	a5q4s3	a5q4sc	a5q4sp										
+"Rite of Passage"	100		4	4	a5q5	1	1	qstsa5q5	A5Q5InitQualKehk		4	axqxs0	a5q5s1	a5q5sc	a5q5sp												
+"Eve of Destruction"	100		4	5	a5q6	1	2	qstsa5q6	A5Q6InitAncients		6	axqxs0	a5q6s1	a5q6s2	a5q6s3	a5q6sc	a5q6sp										

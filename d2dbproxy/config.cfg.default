@@ -1,0 +1,18 @@
+#
+# This Is d2dbproxy config file
+#
+# Format of this config is similar to Apache HTTP Server
+#
+
+# HTTP Service Port to bind
+HttpPort 18800
+
+# d2dbserver address
+D2dbsHost 127.0.0.1
+
+# d2dbserver port
+D2dbsPort 6114
+
+# IP list allowed to connect HTTP Service
+# You can set ip or network in CIDR format
+AllowedIP 127.0.0.1, 192.168.0.0/24

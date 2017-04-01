@@ -1,0 +1,40 @@
+Name	version	act	point	code
+"Rogue Encampment"	0	0	0	a1wp1
+"Cold Plains"	0	0	1	a1wp2
+"Stony Field"	0	0	2	a1wp3
+"Dark Wood"	0	0	3	a1wp4
+"Black Marsh"	0	0	4	a1wp5
+"Outer Cloister"	0	0	5	a1wp6
+"Jail Level 1"	0	0	6	a1wp7
+"Inner Cloister"	0	0	7	a1wp8
+"Catacombs Level 2"	0	0	8	a1wp9
+"Lut Gholein"	0	1	0	a2wp1
+"Sewers Level 2"	0	1	2	a2wp2
+"Dry Hills"	0	1	2	a2wp3
+"Halls of the Dead Level 2"	0	1	3	a2wp4
+"Far Oasis"	0	1	4	a2wp5
+"Lost City"	0	1	5	a2wp6
+"Palace Cellar Level 1"	0	1	6	a2wp7
+"Arcane Sanctuary"	0	1	7	a2wp8
+"Canyon of the Magi"	0	1	8	a2wp9
+"Kurast Docktown"	0	2	0	a3wp1
+"Spider Forest"	0	2	1	a3wp2
+"Great Marsh"	0	2	2	a3wp3
+"Flayer Jungle"	0	2	3	a3wp4
+"Lower Kurast"	0	2	4	a3wp5
+"Kurast Bazaar"	0	2	5	a3wp6
+"Upper Kurast"	0	2	6	a3wp7
+Travincal	0	2	7	a3wp8
+"Durance of Hate Level 2"	0	2	8	a3wp9
+"The Pandemonium Fortress"	0	3	0	a4wp1
+"City of the Damned"	0	3	1	a4wp2
+"River of Flame"	0	3	2	a4wp3
+Harrogath	100	4	0	a5wp1
+"Rigid Highlands"	100	4	1	a5wp2
+"Arreat Plateau"	100	4	2	a5wp3
+"Crystalized Cavern Level 1"	100	4	3	a5wp4
+"Crystalized Cavern Level 2"	100	4	4	a5wp5
+"Halls of Death's Calling"	100	4	5	a5wp6
+"Tundra Wastelands"	100	4	6	a5wp7
+"Glacial Caves Level 1"	100	4	7	a5wp8
+"The Worldstone Keep Level 2"	100	4	8	a5wp9

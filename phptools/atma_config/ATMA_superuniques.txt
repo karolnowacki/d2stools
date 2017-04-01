@@ -1,0 +1,67 @@
+Name	hcIdx	enabled	locId	locName	minion
+Bishibosh	0	1	3	Cold Plains	fallen1
+Bonebreak	1	1	18	Crypt	base_class
+Coldcrow	2	1	13	Cave Level 2	base_class
+Rakanishu	3	1	4	Stony Field	base_class
+Treehead WoodFist	4	1	5	Dark Wood	base_class
+Griswold	5	1	38	Tristram	
+The Countess	6	1	25	Tower Cellar Level 5	base_class
+Pitspawn Fouldog	7	1	30	Jail Level 2	base_class
+Flamespike the Crawler	8	0			
+Boneash	9	1	33	Cathedral	
+Radament	10	1	49	Sewers Level 3	skeleton4
+Bloodwitch the Wild	11	1	60	Halls of the Dead Level 3	base_class
+Fangskin	12	1	61	Claw Viper Temple Level 2	base_class
+Beetleburst	13	1	43	Far Oasis	base_class
+Leatherarm	14	1	59	Stony Tomb Level 2	base_class
+Coldworm the Burrower	15	1	64	Maggot Lair Level 3	sandmaggot1
+Fire Eye	16	1	54	Palace Cellar Level 3	base_class
+Dark Elder	17	1	44	Lost City	base_class
+The Summoner	18	1	74	Arcane Sanctuary	
+Ancient Kaa the Soulless	19	1	66	Tal Rasha's Tomb	base_class
+The Smith	20	1	28	Barracks	
+Web Mage the Burning	21	0			
+Witch Doctor Endugu	22	1	91	Flayer Dungeon Level 3	fetish4
+Stormtree	23	1	79	Lower Kurast	base_class
+Sarina the Battlemaid	24	1	94	Ruined Temple	base_class
+Icehawk Riftwing	25	1	92	Sewers Level 1	base_class
+Ismail Vilehand	26	1	83	Travincal	base_class
+Geleb Flamefinger	27	1	83	Travincal	base_class
+Bremm Sparkfist	28	1	102	Durance of Hate Level 3	base_class
+Toorc Icefist	29	1	83	Travincal	base_class
+Wyand Voidfinger	30	1	102	Durance of Hate Level 3	base_class
+Maffer Dragonhand	31	1	102	Durance of Hate Level 3	base_class
+Winged Death	32	0			
+The Tormentor	33	0			
+Taintbreeder	34	0			
+Riftwraith the Cannibal	35	0			
+Infector of Souls	36	1	108	Chaos Sanctum	base_class
+Lord De Seis	37	1	108	Chaos Sanctum	base_class
+Grand Vizier of Chaos	38	1	108	Chaos Sanctum	base_class
+The Cow King	39	1	39	Moo Moo Farm	base_class
+Corpsefire	40	1	8	Den of Evil	base_class
+The Feature Creep	41	1	107	River of Flame	
+Siege Boss	42	1	110	Bloody Foothills	minion1
+Ancient Barbarian 1	43	1	120	Rocky Summit	
+Ancient Barbarian 2	44	1	120	Rocky Summit	
+Ancient Barbarian 3	45	1	120	Rocky Summit	
+Axe Dweller	46	0			
+Bonesaw Breaker	47	1	115	Crystalized Cavern Level 2	base_class
+Dac Farren	48	1	110	Bloody Foothills	base_class
+Megaflow Rectifier	49	1	111	Rigid Highlands	base_class
+Eyeback Unleashed	50	1	111	Rigid Highlands	base_class
+Threash Socket	51	1	112	Arreat Plateau	imp3
+Pindleskin	52	1	121	Nihlathaks Temple	base_class
+Snapchip Shatter	53	1	119	Glacial Caves Level 2	base_class
+Anodized Elite	54	0			
+Vinvear Molech	55	0			
+Sharp Tooth Sayer	56	1	111	Rigid Highlands	minion3
+Magma Torquer	57	0			
+Blaze Ripper	58	0			
+Frozenstein	59	1	114	Cellar of Pity	base_class
+Nihlathak	60	1	124	Halls of Vaught	
+Baal Subject 1	61	1	131	Throne of Destruction	fallen5
+Baal Subject 2	62	1	131	Throne of Destruction	base_class
+Baal Subject 3	63	1	131	Throne of Destruction	base_class
+Baal Subject 4	64	1	131	Throne of Destruction	base_class
+Baal Subject 5	65	1	131	Throne of Destruction	base_class

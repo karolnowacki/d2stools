@@ -1,0 +1,9 @@
+Name	hcIdx	locId	locName
+Andariel	156	37	Catacombs Level 4
+Duriel	211	73	Tal Rasha's Chamber
+Mephisto	242	102	Durance of Hate Level 3
+Diablo	243	108	The Chaos Sanctuary
+Baal	544	132	The WorldStone Chamber
+Blood Raven	267	17	Burial Grounds
+Izual	256	105	Plains of Despair
+Uber Diablo			The Earth

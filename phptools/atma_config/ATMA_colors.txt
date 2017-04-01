@@ -1,0 +1,22 @@
+Transform Color	Code	Grey
+White	whit	grey_whit
+Light Grey	lgry	grey_lgry
+Dark Grey	dgry	grey_dgry
+Black	blac	grey_blac
+Light Blue	lblu	grey_lblu
+Dark Blue	dblu	grey_dblu
+Crystal Blue	cblu	grey_cblu
+Light Red	lred	grey_lred
+Dark Red	dred	grey_dred
+Crystal Red	cred	grey_cred
+Light Green	lgrn	grey_lgrn
+Dark Green	dgrn	grey_dgrn
+Crystal Green	cgrn	grey_cgrn
+Light Yellow	lyel	grey_lyel
+Dark Yellow	dyel	grey_dyel
+Light Gold	lgld	grey_lgld
+Dark Gold	dgld	grey_dgld
+Light Purple	lpur	grey_lpur
+Dark Purple	dpur	grey_dpur
+Orange	oran	grey_oran
+Bright White	bwht	grey_bwht

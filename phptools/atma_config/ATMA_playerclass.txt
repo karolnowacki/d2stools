@@ -1,0 +1,28 @@
+"Player Class"	"Code"	"StartSkill"	"SkillSet1"	"SkillSet2"	"SkillSet3"	"SkillTab1"	"SkillTab2"	"SkillTab3"	"ModStr1"	"ModStr2"	"ModStr3"
+"Amazon"	"ama"	"6"	"Bow and Crossbow Skills"	"Passive and Magic Skills"	"Javelin and Spear Skills"	"Bow and
+Crossbow
+Skills"	"Passive
+and Magic
+Skills"	"Javelin
+and Spear
+Skills"	"ModStre8j"	"ModStre8i"	"ModStre8h"
+"Sorceress"	"sor"	"36"	"Fire Spells"	"Lightning Spells"	"Cold Spells"	"Fire
+Spells"	"Lightning
+Spells"	"Cold
+Spells"	"ModStre8v"	"ModStre8u"	"ModStre8t"
+"Necromancer"	"nec"	"66"	"Curses"	"Poison and Bone Spells"	"Summoning Spells"	"Curses"	"Poison
+and Bone
+Spells"	"Summoning
+Spells"	"ModStre8p"	"ModStre8o"	"ModStre8n"
+"Paladin"	"pal"	"96"	"Combat Skills"	"Offensive Auras"	"Defensive Auras"	"Combat
+Skills"	"Offensive
+Auras"	"Defensive
+Auras"	"ModStre8m"	"ModStre8l"	"ModStre8k"
+"Barbarian"	"bar"	"126"	"Combat Skills"	"Combat Masteries"	"Warcries"	"Combat
+Skills"	"Combat
+Masteries"	"Warcries"	"ModStre8r"	"ModStre8s"	"ModStre8q"
+"Druid"	"dru"	"221"	"Summoning"	"Shape Shifting"	"Elemental"	"Summoning"	"Shape
+Shifting"	"Elemental"	"ModStre8w"	"ModStre8x"	"ModStre8y"
+"Assassin"	"ass"	"251"	"Traps"	"Shadow Disciplines"	"Martial Arts"	"Traps"	"Shadow
+Disciplines"	"Martial
+Arts"	"ModStre8z"	"ModStre9a"	"ModStre9b"

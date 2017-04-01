@@ -1,0 +1,6 @@
+Name	sName	version	roman	numWaypoints	numQuests	area	town	sTown	townWP	host	reqQuest	exit	numNPCs	NPC1	NPC1bit	NPC2	NPC2bit	NPC3	NPC3bit	NPC4	NPC4bit	NPC5	NPC5bit	NPC6	NPC6bit	NPC7	NPC7bit	NPC8	NPC8bit
+"The Sightless Eye"	"The Sightless Eye"	0	I	9	6	"Rogue Wilderness"	"Rogue Encampment"	"Rogue Encamp."	0	Warriv	a1q6	"Caravan East"	5	Gheed	9	Akara	10	Kashya	11	Charsi	13	Warriv	15						
+"The Secret of the Vizjerei"	"The Vizjerei"	0	II	9	6	"Lut Gholein"	"Lut Gholein"	"Lut Gholein"	9	Jerhyn	a2q6	"Sail East"	7	Drognan	17	Fara	18	Lysander	19	Geglash	20	Meshif	21	Greiz	23	Elzix	24		
+"The Infernal Gate"	"The Infernal Gate"	0	III	9	6	Kurast	Kurast	Kurast	18	Hratli	a3q6	"Infernal Gate"	6	Cain	26	Asheara	29	Alkor	31	Ormus	32	Meshif	35	Natalya	36				
+"The Harrowing"	"The Harrowing"	0	IV	3	3	Chaos	"Pandemonium Fortress"	"Pandemonium F."	27	Tyrael	a4q2	Harrogath																	
+Harrogath	Harrogath	100	V	9	6	Harrogath	Harrogath	Harrogath	30	Larzuk	a5q6		5	Anya	38	Malah	39	Nihlathak	40	Qual-Kehk	41	Cain	42						

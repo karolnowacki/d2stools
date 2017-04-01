@@ -1,0 +1,8 @@
+name	numboxes
+belt	12
+sash	8
+default	4
+girdle	16
+light belt	8
+heavy belt	12
+uber belt	16

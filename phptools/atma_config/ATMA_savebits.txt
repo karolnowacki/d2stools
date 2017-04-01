@@ -1,0 +1,18 @@
+Code	Description	bits	bias	shift	1.10s bits	1.10s bias
+str	Strength	10			10	
+enr	Energy	10			10	
+dex	Dexterity	10			10	
+vit	Vitality	10			10	
+skill	Skill points left	8			8	
+stat	Stat points left	10			10	
+hp	Life	21		8	21	
+mana	Mana	21		8	21	
+stam	Stamina	21		8	21	
+level	Level	7			7	
+exp	Experience	32			32	
+igld	Gold in inventory	25			25	
+sgld	Gold in stash	25			25	
+ac	Defense	11	10		11	10
+dur	Durability	9			8	
+maxdur	Maximum Durability	8			8	
+sock	Number of sockets	4			4	
